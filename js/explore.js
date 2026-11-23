@@ -1,0 +1,46 @@
+/* ===== TAHAP 4: DATA & EKSPLORASI (konten bisa diedit guru) ===== */
+const I=(icon,name,fungsi,parts,use,short)=>({icon,name,fungsi,parts,use,short});
+DATA.hardware=[
+ I("💻","Laptop","Perangkat komputer portabel yang digunakan untuk membuat, menjalankan, dan menguji program serta mengembangkan aplikasi atau gim.",["Prosesor (CPU) – mengolah data.","RAM – menyimpan data sementara.","Storage (SSD/HDD) – menyimpan data dan aplikasi.","Layar (Display) – menampilkan hasil kerja."],["Menulis kode program (coding).","Menjalankan IDE (mis. Visual Studio Code).","Membuat dan menguji aplikasi/gim."]),
+ I("🖥️","CPU","Unit pemroses komputer meja (PC) di dalam casing; mengolah data dan menjalankan program bersama RAM, storage, dan kartu grafis.",["Prosesor – otak yang mengolah data.","RAM dan storage – menyimpan data.","Kartu grafis (GPU) – memproses grafis dan gim.","Kipas pendingin – menjaga suhu."],["Mengembangkan gim dan aplikasi besar.","Menjalankan game engine dan editor desain.","Menguji aplikasi berkinerja tinggi."]),
+ I("📺","Monitor","Layar eksternal yang menampilkan hasil kerja komputer seperti kode, desain, dan tampilan aplikasi.",["Panel layar (LCD/LED) – menampilkan gambar.","Resolusi – menentukan ketajaman tampilan.","Port HDMI/DisplayPort – penghubung ke komputer.","Pengaturan kecerahan – menjaga kenyamanan mata."],["Melihat kode dan hasil program lebih luas.","Menampilkan desain dan kode berdampingan.","Menguji tampilan aplikasi atau gim."]),
+ I("⌨️","Keyboard","Alat input untuk mengetik huruf, angka, simbol, dan perintah ke komputer.",["Tombol huruf dan angka – menulis teks dan kode.","Tombol fungsi (F1–F12) – pintasan perintah.","Ctrl, Alt, Shift – kombinasi pintasan (shortcut).","Tombol panah – menggerakkan kursor."],["Mengetik kode program.","Memakai pintasan, mis. Ctrl+S untuk menyimpan.","Menjalankan perintah di terminal."]),
+ I("🖱️","Mouse","Alat input penunjuk untuk menggerakkan kursor, memilih objek, dan menyeret elemen di layar.",["Klik kiri – memilih objek.","Klik kanan – membuka menu konteks.","Roda gulir (scroll) – menggeser halaman.","Sensor – membaca gerakan."],["Menyeret objek pada aplikasi desain.","Memilih menu pada IDE.","Menata objek di game engine."]),
+ I("🎧","Headset","Perangkat audio berisi speaker dan mikrofon untuk mendengar suara dan berbicara.",["Speaker (earcup) – mengeluarkan suara.","Mikrofon – merekam suara.","Kabel/Bluetooth – penghubung ke perangkat.","Pengatur volume – menyesuaikan suara."],["Menguji suara dan musik gim.","Rapat daring dengan tim.","Mengikuti video tutorial."]),
+ I("📷","Webcam","Kamera yang terhubung ke komputer untuk menangkap gambar dan video.",["Lensa – menangkap gambar.","Sensor – mengubah cahaya menjadi data.","Mikrofon bawaan – pada beberapa tipe.","Konektor USB – penghubung ke komputer."],["Rapat atau presentasi daring.","Demo produk kepada tim atau klien.","Merekam video tutorial."]),
+ I("💾","Media Penyimpanan","Perangkat untuk menyimpan data, proyek, dan cadangan (backup) di luar komputer.",["Flash drive – penyimpan portabel kecil.","SSD/HDD eksternal – berkapasitas besar.","Kartu memori – penyimpan perangkat kecil.","Kapasitas – ukuran data yang dapat disimpan."],["Mencadangkan berkas proyek.","Memindahkan berkas antar komputer.","Menyimpan aset gim berukuran besar."]),
+ I("📡","Perangkat Jaringan (Router)","Perangkat yang menghubungkan komputer ke jaringan dan internet serta membagi koneksi ke banyak perangkat.",["Antena – memancarkan sinyal Wi-Fi.","Port LAN – sambungan kabel jaringan.","Port WAN – sambungan ke penyedia internet.","Lampu indikator – status koneksi."],["Mengakses repositori seperti GitHub.","Mengunduh pustaka dan alat pengembangan.","Bekerja bersama tim secara daring."],"Router")
+];
+DATA.software=[
+ I("🪟","Sistem Operasi","Program utama yang mengatur perangkat keras dan menjalankan aplikasi lain.",["Contoh: Windows, Linux, macOS.","Mengelola berkas, memori, dan perangkat.","Menyediakan antarmuka (desktop).","Mengatur keamanan dan akun pengguna."],["Menjalankan editor kode dan browser.","Mengelola folder proyek.","Memasang driver dan pembaruan."]),
+ I("&lt;/&gt;","Visual Studio Code","Editor kode (IDE) ringan dan fleksibel untuk menulis, mengelola, dan menjalankan kode program.",["Mendukung banyak bahasa pemrograman (HTML, CSS, JavaScript, PHP, dll).","Ekstensi untuk kebutuhan pengembangan.","Terintegrasi dengan Git."],["Menulis kode web (HTML, CSS, JavaScript).","Membuat aplikasi berbasis PHP/Framework.","Mengembangkan gim sederhana (mis. JavaScript/Unity script)."],"Editor Kode / IDE"),
+ I("🌐","Browser (Web)","Aplikasi untuk membuka situs web; bagi pengembang juga alat menguji tampilan dan kode web.",["Contoh: Chrome, Firefox, Edge.","Developer Tools – memeriksa HTML, CSS, JavaScript.","Console – melihat pesan kesalahan.","Responsive mode – menguji berbagai ukuran layar."],["Menguji halaman web buatan sendiri.","Mencari dokumentasi pemrograman.","Mengakses repositori dan layanan daring."]),
+ I("🎨","Aplikasi Desain (UI/UX & Grafis)","Aplikasi untuk merancang tampilan antarmuka dan membuat gambar atau aset grafis.",["Figma – merancang UI/UX dan prototipe.","Photoshop – mengolah gambar.","Illustrator – membuat grafis vektor (ikon, logo)."],["Membuat rancangan tampilan aplikasi.","Menyiapkan ikon dan gambar.","Membuat sprite atau aset gim 2D."],"Aplikasi Desain"),
+ I("🔀","Version Control (Git & GitHub)","Alat yang mencatat setiap perubahan kode agar tim dapat bekerja bersama dan kembali ke versi lama.",["Git – mencatat riwayat perubahan (commit).","GitHub – menyimpan repositori secara daring.","Branch dan merge – memisah dan menggabungkan kerja tim."],["Menyimpan perubahan kode secara berkala.","Berkolaborasi dalam proyek tim.","Mengunggah proyek ke GitHub Pages."],"Version Control"),
+ I("🗄️","Database Tools (Manajemen Data)","Alat untuk membuat, menyimpan, dan mengelola data yang dipakai aplikasi.",["Contoh: MySQL dan SQLite.","SQL – bahasa untuk perintah data.","Tabel dan query – menyimpan dan mengambil data."],["Menyimpan data pengguna aplikasi.","Mengelola data nilai atau produk.","Menyimpan skor dan progres gim."],"Database Tools"),
+ I("🎮","Game Engine (Pengembangan Gim)","Perangkat lunak untuk membangun gim: menata adegan, karakter, fisika, dan suara dalam satu proyek.",["Contoh: Unity dan Unreal Engine.","Scene editor – menata objek gim.","Scripting dan build – memrogram dan mengemas gim."],["Membuat prototipe gim 2D/3D.","Menguji gim sebelum dirilis.","Menyusun aset gambar dan audio."],"Game Engine")
+];
+const seen={hardware:new Set(),software:new Set()},sel={hardware:0,software:1};
+const META={hardware:{t:"Eksplorasi Perangkat Keras",l:"Bagian Penting",c:"f",s:"Amati perangkat keras yang tersedia. Kenali fungsi setiap perangkat dan perannya dalam kegiatan pengembangan."},
+ software:{t:"Eksplorasi Perangkat Lunak",l:"Fitur Utama",c:"m",s:"Perangkat lunak membantu pengembang menulis kode, merancang tampilan, mengelola proyek, menguji, dan membangun gim."}};
+const li=a=>a.map(x=>`<li>${x}</li>`).join("");
+const cnt=k=>`${Store.isDone(k)?"✅ ":""}Dilihat ${seen[k].size} dari ${DATA[k].length}`;
+function panelHTML(k){const it=DATA[k][sel[k]];
+ return `<button class="x" data-x="1" aria-label="Tutup panel">✕</button><div class="ph"><span>${it.icon}</span><h3>${it.name}</h3></div><h4>Fungsi</h4><p>${it.fungsi}</p><h4>${META[k].l}</h4><ul>${li(it.parts)}</ul><h4>Contoh Penggunaan</h4><ul>${li(it.use)}</ul>`;}
+function explore(k){const m=META[k],L=DATA[k];seen[k].add(sel[k]);
+ const btn=(c,i,it)=>`<button class="${c}${i===sel[k]?" on":""}" data-sel="${i}" data-k="${k}"><span>${it.icon}</span>${it.short||it.name}</button>`;
+ return `${char(m.c,"l mini")}<div class="ttl">${m.t}<small id="cnt">${cnt(k)}</small></div><div class="say">${m.s}</div>
+ <div class="desk">${L.map((it,i)=>btn("obj",i,it)).join("")}</div><aside class="panel pop" id="panel">${panelHTML(k)}</aside>
+ <div class="strip"><button class="arr" data-arr="-1" aria-label="Geser kiri">‹</button><div class="tabs" id="tabs">${L.map((it,i)=>btn("tab",i,it)).join("")}</div><button class="arr" data-arr="1" aria-label="Geser kanan">›</button></div>`;}
+pages.hardware=()=>explore("hardware");pages.software=()=>explore("software");
+function pick(k,i){sel[k]=i;seen[k].add(i);
+ document.querySelectorAll(".obj,.tab,.hs[data-sel]").forEach(n=>n.classList.toggle("on",+n.dataset.sel===i));
+ const p=$("#panel");p.innerHTML=panelHTML(k);p.classList.remove("hide","pop");void p.offsetWidth;p.classList.add("pop");
+ const t=document.querySelector(".tab.on"),tb=$("#tabs");if(t)tb.scrollTo({left:t.offsetLeft-tb.clientWidth/2+t.clientWidth/2,behavior:"smooth"});
+ if(seen[k].size===DATA[k].length&&!Store.isDone(k)){Store.mark(k);Sound.play("good");toast("Eksplorasi selesai ✅")}
+ $("#cnt").textContent=cnt(k);}
+document.addEventListener("click",e=>{
+ const s=e.target.closest("[data-sel]");if(s){Sound.play("click");pick(s.dataset.k,+s.dataset.sel);return}
+ if(e.target.closest("[data-x]")){Sound.play("click");$("#panel").classList.add("hide");return}
+ const a=e.target.closest("[data-arr]");if(a){Sound.play("whoosh");$("#tabs").scrollBy({left:+a.dataset.arr*300,behavior:"smooth"})}});
+document.addEventListener("mouseover",e=>{if(e.target.closest(".obj,.tab"))Sound.play("hover")});
